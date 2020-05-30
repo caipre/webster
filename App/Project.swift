@@ -25,7 +25,9 @@ let project = Project(
             product: .app,
             bundleId: "co.nickp.webster",
             deploymentTarget: .iOS(targetVersion: "13.0", devices: .iphone),
-            infoPlist: infop
+            infoPlist: infop,
+            sources: ["AppDelegate.swift", "SceneDelegate.swift"],
+            resources: ["Assets.xcassets/**", "Localization/**", "Base.lproj/**"]
         ),
     ]
 )
