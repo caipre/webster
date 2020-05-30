@@ -17,7 +17,7 @@ let infop: InfoPlist = .extendingDefault(with: [
 
 let project = Project(
     name: "Webster",
-    settings: Settings(base: settings),
+    settings: settings,
     targets: [
         Target(
             name: "Webster",
